@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: yellow;
+            color: blue;
+            padding: 20px;
+            border: 2px solid #000;
+            margin: 20px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <center>
+            <h3>DETAILS TAG..!</h3>
+            <p>This tag is used to specify the additional details on the web page that the user can view or hide on demand. </p>
+        </center>
+        <hr>
+
+        <center>
+            <h3>This is SUMMARY TAG</h3>
+            <p>The <b>HTML SUMMARY</b>TAG IS USED WITH <b> DETAILS</b>tag. It is used as a summary,caption or legend for the content of a details element</p>
+        </center>
+        <hr>
+
+        <details>
+            <summary>HTML</summary>
+            <h1>HTML</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur officia distinctio deserunt qui iure. Commodi beatae eveniet enim dolorum adipisci repudiandae cupiditate repellendus quas vero. Eum corrupti nam quae repellendus.</p>
+        </details>
+        <details>
+            <summary>CSS</summary>
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi minus debitis obcaecati, corporis velit laudantium sit, pariatur vitae quis libero in similique sed repellat temporibus perferendis eveniet hic? Iure.</p>
+
+        </details>
+
+        <center>
+            <h3>TIME TAG..!</h3>
+            <p><b>HTML TIME</b>tag is used to define date and time . It displayes time value in a 24 hour clock or a preciase date in a gregorian calender in html.</p>
+        </center>
+
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci, maxime reprehenderit, suscipit iste corrupti odio in ratione sapiente ipsa, nesciunt porro laboriosam cumque reiciendis quasi eligendi pariatur explicabo illum.<b>2:30pm</b></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quo ad dolorem, similique ducimus vel! Maxime, obcaecati ratione enim error modi tenetur, <time>2:30pm</time> cum ipsa eligendi in consequatur unde aliquid aspernatur?</p>
+
+        <hr>
+
+
+
+
+        <dialog id="vaiji">
+            <button type="button" id="abhi">&times;</button>
+            <h1>full history</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quod laudantium debitis molestias veritatis omnis vero eum voluptatibus corrupti, autem quam exercitationem doloremque totam itaque pariatur? Quisquam sed minima magnam?</p>
+        </dialog>
+
+        <button id="pavana">Open Dialog</button>
+        <button id="Tejas">Close Dialog</button>
+
+
+        <script>
+            document.getElementById("pavana").onclick=function(){
+                document.getElementById("vaiji").show();
+            };
+
+            document.getElementById("Tejas").onclick=function(){
+                document.getElementById("vaiji").close();
+            };
+
+            document.getElementById("abhi").onclick=function(){
+                document.getElementById("vaiji").close();
+            }; 
+        </script>
+
+    </body>
+</html>
